@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body class="p-2">
+    <h5 class="text-teal-500">
+        Customization
+    </h5>
+    <h1 class="font-bold text-3xl">
+        Customizing Spacing
+    </h1>
+    <h1>
+        Customizing the default spacing and sizing scale for your project.
+    </h1>
+    <div>
+        <p>
+            Use the spacing key in the theme section of your tailwind.config.js file to customize Tailwind’s <a class="underline underline-offset-8 decoration-teal-500 cursor-pointer hover:decoration-2">default spacing/sizing scale.</a>
+        </p>
+        
+    </div>
+    <div class="bg-gray-800 rounded-1g basis-0 m-2 rounded-xl">
+        <div class="text-teal-500 p-4 border-b-2 border-sky-200">
+            tailwind.config.js
+        </div>
+        <pre class="text-teal-500 p-4">
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  theme: {
+    spacing: {
+      '1': '8px',
+      '2': '12px',
+      '3': '16px',
+      '4': '24px',
+      '5': '32px',
+      '6': '48px',
+    }
+  }
+}
+        </pre>
+    </div>
+</body>
+</html>
